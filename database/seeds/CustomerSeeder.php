@@ -13,6 +13,6 @@ class CustomerSeeder extends Seeder
     public function run(): void
     {
         // Create 10000 records of messages
-        factory(App\Customer::class, 10000)->create();
+        factory(App\Customer::class, 10)->create();
     }
 }
