@@ -13,7 +13,7 @@ class MessageSeeder extends Seeder
     public function run(): void
     {
         // Create 100 records of messages
-        factory(App\Message::class, 5)->create()->each(static function (App\Message $message) {
+        factory(App\Message::class, 100)->create()->each(static function (App\Message $message) {
             // Seed the relation with 2 schedules
 
             try {
