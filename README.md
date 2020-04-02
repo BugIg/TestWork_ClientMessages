@@ -22,4 +22,19 @@
 
 Время на задачу ушло 2.5 или 3 часа
 
-Также хотелось сказать что если это была реальная задача то я бы ее сделал совсем по другому но так как это тестовая задача сделать так как сделал.
+Также хотелось сказать что если это была реальная задача, то я  ее сделал совсем по другому, но так как это тестовая задача сделал так как сделал.
+
+**Как проверить**
+
+1. Переименовать docker/.env-example в docker/.env
+2. Переименовать .env-example в .env 
+3. Из папки docker запустить 
+- `docker-compose up -d`
+- `docker-compose exec php-fpm composer install`
+- `docker-compose exec php-fpm php artisan migrate`
+- `docker-compose exec php-fpm php artisan db:seed` 
+- `docker-compose exec php-fpm php artisan message:send {time}` - time - это время отправки в формате H:i
+
+Task Scheduling добавлять не стал.
+
+
